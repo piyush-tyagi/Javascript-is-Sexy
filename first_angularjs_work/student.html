@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Welcome.</p> <p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x = document.URL;
+        var url = new URL(x);
+        var name = url.searchParams.get("Name");
+        document.getElementById("demo").innerHTML = name;
+    }
+    window.onload=myFunction();
+</script>
+
+</body>
+</html>
